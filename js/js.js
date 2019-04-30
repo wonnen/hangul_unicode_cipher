@@ -1,4 +1,5 @@
-var b = document.getElementById('b');
-b.addEventListener('click', function(){
-    alert('Hello world');
-})
+function encode(){
+    var text = document.getElementById("b").value;
+    text = "hi"
+    document.getElementById("original").value = text;
+}

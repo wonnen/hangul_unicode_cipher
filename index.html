@@ -6,7 +6,9 @@
     </head>
     <body>
         <script type="text/javascript" src="./js/js.js"></script>
-        <input type="text" id="original" value=""/><input type="button" onclick="encode()" value="暗号化"/>
-        <input type="text" id="encoded" value=""/><input type="button" onclick="decode()" value="復号化"/>
+        <textarea id="original" form="inform" cols="40" rows="10" placeholder="여기다가는 쓰고싶은 말을 적어요"></textarea>
+        <input type="button" onclick="encode()" value="暗号化"/>
+        <textarea id="encoded" form="inform" cols="40" rows="10" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
+        <input type="button" onclick="decode()" value="復号化"/>
     </body>
 </html>

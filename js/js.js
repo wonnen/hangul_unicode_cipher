@@ -1,4 +1,4 @@
 function encode(){
-    var text = "hi"
+    var text = "hi";
     document.getElementById("original").value = text;
 }

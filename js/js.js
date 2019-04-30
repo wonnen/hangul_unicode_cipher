@@ -5,10 +5,10 @@ function encode(){
     for(i=0; i<input_l.length; i++){
         input_l[i] = input.charCodeAt(i);
 
-        if((input_l[i] >= 44032) && (input_l[i] <= 55215)){
+        if((input_l[i] >= 44032) && (input_l[i] <= 55203)){
             input_l[i] += 10000;
 
-            if(input_l[i] > 55215){
+            if(input_l[i] > 55203){
                 input_l[i] -= 11183;
             }
         }
@@ -26,7 +26,7 @@ function decode(){
     for(i=0; i<input_l.length; i++){
         input_l[i] = input.charCodeAt(i);
 
-        if((input_l[i] >= 44032) && (input_l[i] <= 55215)){
+        if((input_l[i] >= 44032) && (input_l[i] <= 55203)){
             input_l[i] -= 10000;
 
             if(input_l[i] < 44032){

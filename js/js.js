@@ -9,7 +9,7 @@ function encode(){
             input_l[i] += 10000;
 
             if(input_l[i] > 55203){
-                input_l[i] -= 11183;
+                input_l[i] -= 11171;
             }
         }
         input_l[i] = String.fromCharCode(input_l[i]);
@@ -30,7 +30,7 @@ function decode(){
             input_l[i] -= 10000;
 
             if(input_l[i] < 44032){
-                input_l[i] += 11183;
+                input_l[i] += 11171;
             }
         }
         input_l[i] = String.fromCharCode(input_l[i]);

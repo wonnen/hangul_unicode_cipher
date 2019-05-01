@@ -2,102 +2,48 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>안녕 리코야 v2.0</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-        <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">                <!-- Font Awesome -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
-        <link rel="stylesheet" href="css/templatemo-style.css">   
+        <title>안녕 리코야 v2.0</title>   
+        <link rel="stylesheet" href="./css/tap.css">
     </head>
     
-    <body class="tm-bg-img-content">
-        
-        <div class="tm-bg-img-header">
-            <div class="container-fluid">
-                <div id="top" class="tm-header-container">
-                    <!-- 1. Site Header -->
-                    <div class="row tm-site-header">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-xs-center">
-    
-                            <h1 class="tm-site-title">Rainbow</h1>
-                        
-                        </div>
-                    </div>
-                </div> <!-- .tm-header-container -->
-            </div> <!-- container-fluid -->               
-        </div> <!-- tm-bg-img-header -->
-            
-        <div class="container-fluid">
-            
-            <!-- Plan -->
-        </div> <!-- container-fluid -->        
-    
-        <div class="tm-bg-img-content">
-            <div class="container-fluid">
-                <div class="row" id="tm-section-4">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-xs-center">
-                        <script type="text/javascript" src="./js/js.js"></script>
-                        <textarea id="original" form="inform" placeholder="여기다가는 쓰고싶은 말을 적어요"></textarea>
-                        <input type="button" onclick="encode()" value="暗号化"/>
-                        <br/><br/>
-                        <textarea id="encoded" form="inform" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
-                        <input type="button" onclick="decode()" value="復号化"/>        
-                    </div>
-                </div>
-            </div>    
-        </div> <!-- contact section header -->
-        <!-- load JS files -->
-        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
-        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
-    
+    <body>
+        <script type="text/javascript" src="./js/js.js"></script>
         <script>
-    
-            function prepareMenuForDesktop() {
-    
-                var navbarHeight = 0;
-                
-                // For screens greater than 767
-                if($(window).width() > 767) {
-    
-                    // target at which the menu bar changes to sticky
-                    var target = $("#tm-section-1").offset().top - 100;
-    
-                    // window scroll
-                    $(window).scroll(function(){
-    
-                        if($(this).scrollTop() > target) {                            
-                            $(".tm-navbar-row").addClass("sticky");                            
-                        }
-                        else {
-                            $(".tm-navbar-row").removeClass("sticky");
-                        }     
-    
-                    }); 
-    
-                    navbarHeight = 56;
-                }
-    
-                // Single Page Nav
-                $('#tmNavbar').singlePageNav({
-                   'currentClass' : "active",
-                    offset : navbarHeight,
-                    'filter': ':not(.external)'
-                });  
-            }  
-       
-            $(document).ready(function(){                 
-    
-                prepareMenuForDesktop();
-    
-                // On window resize, prepare menu
-                $(window).resize(function(){
-                    prepareMenuForDesktop();                 
-                                      
-                });       
-            });
-    
-        </script>               
+            $(document).ready(function(){
+                $('ul.tabs li').click(function(){
+                    var tab_id = $(this).attr('data-tab');
+
+                    $('ul.tabs li').removeClass('current');
+                    $('.tab-content').removeClass('current');
+
+                    $(this).addClass('current');
+                    $("#"+tab_id).addClass('current');
+                })
+            })
+        </script>
+
+        <div class="container">
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1">메뉴 하나</li>
+                <li class="tab-link" data-tab="tab-2">메뉴 둘</li>
+            </ul>
+
+            <div id="tab-1" class="tab-content current">
+                    <textarea id="original" form="inform" placeholder="여기다가는 쓰고싶은 말을 적어요"></textarea>
+                    <input type="button" onclick="encode()" value="暗号化"/>
+                    <br/><br/>
+                    <textarea id="encoded" form="inform" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
+                    <input type="button" onclick="decode()" value="復号化"/>  
+            </div>
+
+            <div id="tab-2" class="tab-content">
+                    <textarea id="encoded" form="inform" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
+                    <input type="button" onclick="decode()" value="復号化"/> 
+                    <br/><br/>
+                    <textarea id="original" form="inform" placeholder="여기다가는 쓰고싶은 말을 적어요"></textarea>
+                    <input type="button" onclick="encode()" value="暗号化"/>
+            </div>
+        </div>
+                 
     </body>
 </html>

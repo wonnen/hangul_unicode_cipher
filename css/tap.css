@@ -23,14 +23,14 @@ ul.tabs li{
 }
 
 ul.tabs li.current{
-    background: #ededed;
+    background: #edf;
     color: #222;
 }
 
 .tab-content{
     display: none;
     text-align: center;
-    background: #ededed;
+    background: #eef;
     padding: 15px;
 }
 
@@ -41,8 +41,10 @@ ul.tabs li.current{
 .tarea{
     resize: vertical;
     width: 90%;
+    font-size: 1.5em;
 }
 
 .btn{
     text-align: center;
+    font-size: 5em;
 }

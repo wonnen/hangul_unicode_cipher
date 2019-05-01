@@ -2,9 +2,9 @@ var key1 = "리코가세상에서제일좋아"; key1_l = key1.split('');
 var key2 = "세상에서리코가제일이뻐"; key2_l = key2.split('');
 var key3 = "제일착한리코야사랑해요"; key3_l = key3.split('');
 for(i=0; i<11; i++){
-    key1_l[i] = key1.charCodeAt(i);
-    key2_l[i] = key2.charCodeAt(i);
-    key3_l[i] = key3.charCodeAt(i);
+    key1_l[i] = key1.charCodeAt(i)-44032;
+    key2_l[i] = key2.charCodeAt(i)-44032;
+    key3_l[i] = key3.charCodeAt(i)-44032;
 }
 
 function encode(){

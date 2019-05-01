@@ -5,6 +5,7 @@ body{
 
 .container{
     width: 80%;
+    height: 50%;
     margin: 0 auto;
 }
 
@@ -28,6 +29,7 @@ ul.tabs li.current{
 
 .tab-content{
     display: none;
+    text-align: center;
     background: #ededed;
     padding: 15px;
 }

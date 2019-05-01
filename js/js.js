@@ -20,11 +20,11 @@ function encode(){
     }
 
     output = input_l.join('');
-    document.getElementById("encoded").value = output;
+    document.getElementById("encoded1").value = output;
 }
 
 function decode(){
-    var input = document.getElementById("encoded").value;
+    var input = document.getElementById("encoded2").value;
     var input_l = input.split('');
 
     for(i=0; i<input_l.length; i++){
@@ -40,5 +40,5 @@ function decode(){
     }
 
     output = input_l.join('');
-    document.getElementById("original").value = output;
+    document.getElementById("decoded").value = output;
 }

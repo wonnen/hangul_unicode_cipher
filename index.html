@@ -25,8 +25,8 @@
 
         <div class="container">
             <ul class="tabs">
-                <li class="tab-link current" data-tab="tab-1">메뉴 하나</li>
-                <li class="tab-link" data-tab="tab-2">메뉴 둘</li>
+                <li class="tab-link current" data-tab="tab-1">암호화</li>
+                <li class="tab-link" data-tab="tab-2">복호화</li>
             </ul>
 
             <div id="tab-1" class="tab-content current">
@@ -34,17 +34,15 @@
                     <br/>
                     <input type="button" onclick="encode()" value="暗号化"/>
                     <br/><br/>
-                    <textarea class="textarea" id="encoded" form="inform" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
-                    <input type="button" onclick="decode()" value="復号化"/>  
+                    <textarea class="textarea" id="encoded1" form="inform" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
             </div>
 
             <div id="tab-2" class="tab-content">
-                    <textarea class="textarea" id="encoded" form="inform" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
+                    <textarea class="textarea" id="encoded2" form="inform" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
                     <br/>
                     <input type="button" onclick="decode()" value="復号化"/> 
                     <br/><br/>
-                    <textarea class="textarea" id="original" form="inform" placeholder="여기다가는 쓰고싶은 말을 적어요"></textarea>
-                    <input type="button" onclick="encode()" value="暗号化"/>
+                    <textarea class="textarea" id="decoded" form="inform" placeholder="여기다가는 쓰고싶은 말을 적어요"></textarea>
             </div>
         </div>
                  

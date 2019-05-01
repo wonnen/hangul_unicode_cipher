@@ -38,8 +38,11 @@ ul.tabs li.current{
     display: inherit;
 }
 
-.textarea{
+.tarea{
     resize: vertical;
     width: 80%;
-    height: 50%;
+}
+
+.btn{
+    text-align: center;
 }

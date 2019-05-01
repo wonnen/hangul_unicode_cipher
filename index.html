@@ -114,110 +114,18 @@
         <div class="container-fluid">
             
             <!-- Plan -->
-            <div class="row tm-section" id="tm-section-3">
-                
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-xs-center">
-                    <h2 class="tm-section-title">Select your plan</h2>
-                    <p class="tm-section-subtitle">
-                        Phasellus in magna elementum, tincidunt metus dictum, condimentum
-                        eros. Aenean ante erat, blandit quis mi sed, convallis luctus purus. Donec
-                        accumsan nulla sed odio.
-                    </p>    
-                </div>
-                        
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        
-                    <div class="tm-plan-boxes-container">
-                        
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-table-col">
-                                
-                            <table class="tm-table-full-width">
-                                <thead>
-                                    <tr class="tm-bg-green-1">
-                                        <th class="tm-plan-table-header">Basic Pack</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="tm-bg-green-2"><td class="tm-plan-table-cell">10 email addresses</td></tr>
-                                    <tr class="tm-bg-green-3"><td class="tm-plan-table-cell">100 GB space</td></tr>
-                                    <tr class="tm-bg-green-1"><td class="tm-plan-table-cell">1,000 GB bandwidth</td></tr>
-                                    <tr class="tm-bg-green-2"><td class="tm-plan-table-cell">USD $10 per month</td></tr>
-                                    <tr class="tm-bg-green-3">
-                                        <td class="tm-plan-table-cell tm-plan-table-cell-pad-small text-xs-center">
-                                            <a href="#" class="tm-bg-green-1 tm-btn-rounded tm-btn-green">Buy</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>  
-    
-                        </div>
-    
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-table-col">
-                            
-                            <table class="tm-table-full-width">
-                                <thead>
-                                    <tr class="tm-bg-blue-1">
-                                        <th class="tm-plan-table-header">Professional Pack</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="tm-bg-blue-2"><td class="tm-plan-table-cell">20 email addresses</td></tr>
-                                    <tr class="tm-bg-blue-3"><td class="tm-plan-table-cell">200 GB space</td></tr>
-                                    <tr class="tm-bg-blue-1"><td class="tm-plan-table-cell">2,000 GB bandwidth</td></tr>
-                                    <tr class="tm-bg-blue-2"><td class="tm-plan-table-cell">USD $15 per month</td></tr>
-                                    <tr class="tm-bg-blue-3">
-                                        <td class="tm-plan-table-cell tm-plan-table-cell-pad-small text-xs-center">
-                                            <a href="#" class="tm-bg-blue-1 tm-btn-rounded tm-btn-blue">Buy</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>  
-    
-                        </div>
-    
-                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-table-col">
-    
-                            <table class="tm-table-full-width">
-                                <thead>
-                                    <tr class="tm-bg-gold-1">
-                                        <th class="tm-plan-table-header">Gold Pack</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="tm-bg-gold-2"><td class="tm-plan-table-cell">30 email addresses</td></tr>
-                                    <tr class="tm-bg-gold-3"><td class="tm-plan-table-cell">300 GB space</td></tr>
-                                    <tr class="tm-bg-gold-1"><td class="tm-plan-table-cell">3,000 GB bandwidth</td></tr>
-                                    <tr class="tm-bg-gold-2"><td class="tm-plan-table-cell">USD $20 per month</td></tr>
-                                    <tr class="tm-bg-gold-3">
-                                        <td class="tm-plan-table-cell tm-plan-table-cell-pad-small text-xs-center">
-                                            <a href="#" class="tm-bg-gold-1 tm-btn-rounded tm-btn-gold">Buy</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>  
-    
-                        </div>
-    
-                    </div> <!-- tm-plan-boxes-container -->
-    
-                </div> <!-- .col-xs-12 -->
-    
-            </div> <!-- row -->
-    
         </div> <!-- container-fluid -->        
     
         <div class="tm-bg-img-content">
             <div class="container-fluid">
                 <div class="row" id="tm-section-4">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-xs-center">
-                                
-                        <h2 class="tm-section-title">Contact Us</h2>
-                        <p class="tm-section-subtitle tm-section-subtitle-contact">
-                        Phasellus in magna elementum, tincidunt metus dictum, condimentum
-                        eros. Aenean ante erat, blandit quis mi sed, convallis luctus purus. Donec
-                        accumsan nulla sed odio.
-                        </p> 
-    
+                        <script type="text/javascript" src="./js/js.js"></script>
+                        <textarea id="original" form="inform" cols="40" rows="10" placeholder="여기다가는 쓰고싶은 말을 적어요"></textarea>
+                        <input type="button" onclick="encode()" value="暗号化"/>
+                        <br/><br/>
+                        <textarea id="encoded" form="inform" cols="40" rows="10" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
+                        <input type="button" onclick="decode()" value="復号化"/>        
                     </div>
                 </div>
             </div>    
@@ -321,11 +229,6 @@
     
         </script>             
     
-        <script type="text/javascript" src="./js/js.js"></script>
-        <textarea id="original" form="inform" cols="40" rows="10" placeholder="여기다가는 쓰고싶은 말을 적어요"></textarea>
-        <input type="button" onclick="encode()" value="暗号化"/>
-        <br/><br/>
-        <textarea id="encoded" form="inform" cols="40" rows="10" placeholder="여기다가는 풀고싶은 암호를 적어요"></textarea>
-        <input type="button" onclick="decode()" value="復号化"/>
+        
     </body>
 </html>
